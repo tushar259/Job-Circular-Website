@@ -1,0 +1,185 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+@import 'video.js';
+.iWantToHideScroll{overflow:-moz-scrollbars-none;-ms-overflow-style:none;}.iWantToHideScroll::-webkit-scrollbar{display:none;}
+
+.video-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.custom-video{
+    width: 100%;
+}
+.c-video:hover .video-controls{
+    transform: translateY(0);
+}
+.c-video{
+    width: 100%;
+    max-width: 1100px;
+    position: relative;
+    overflow: hidden;
+}
+.video-controls{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    flex-wrap: wrap;
+    background: rgba(0, 0, 0, 0.2);
+    transform: translateY(100%) translateY(-5px);
+    transition: all .4s;
+}
+.video-play-pause-buttons{
+    padding: 10px;
+}
+.video-play-pause-buttons button{
+    background: none;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+.video-play-pause-buttons button:before{
+    content: '\f144';
+    font-family: 'Font Awesome 5 Free';
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    font-size: 28px;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+}
+.video-play-pause-buttons button.play:before{
+    content: '\f144';
+}
+.video-play-pause-buttons button.pause:before{
+    content: '\f28b';
+}
+.orange-bar{
+    height: 5px;
+    top: 0;
+    left: 0;
+    background: #000;
+    width: 100%;
+    cursor: pointer;
+}
+.orange-juice{
+    height: 5px;
+    background-color: orangered;
+    cursor: pointer;
+}
+.material-icons{
+    cursor: pointer;
+}
+.showIntoVolumUpDown{
+    opacity: 0;
+    width: 0%;
+    padding-right: 10px;
+    transition: all .5s;
+}
+.introVolumeButton:hover + .showIntoVolumUpDown{
+    opacity: 1;
+    width: 74px;
+    transform: translateX(5%);
+    transition: all .5s;
+}
+.showIntoVolumUpDown:hover{
+    opacity: 1;
+    width: 74px;
+    transform: translateX(5%);
+    transition: all .5s;
+}
+.hideSepecificSection{
+    display: none;
+}
+.makeVideoFullScreen{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+.makeVideoFullScreen:hover .video-controls{
+    transform: translateY(0);
+}
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+}
+.table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+img {
+    max-width:100%;
+    height:auto;
+}
+.circle {
+    width: 50px;
+    height: auto;
+    line-height: 25px;
+    border-radius: 50%;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    background: red;
+}
+
+
+
+.demo {
+    display: inline-block;
+ }
+ .demo1 {
+    text-align: center;
+ }
+ .demo a {
+    color: red;
+    padding: 5px 12px;
+    text-decoration: none;
+    transition: background-color 2s;
+    border: 1px solid orange;
+    font-size: 12px;
+ }
+ .demo a.active {
+    background-color: orange;
+    color: white;
+    border-radius: 5px;
+ }
+ .demo a:hover:not(.active) {
+    background-color: yellow;
+ }
+ .demo a:first-child {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+ }
+ .demo a:last-child {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
